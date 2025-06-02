@@ -1,0 +1,307 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaui-maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaui-maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaui-maui\\viewmodels\\selecciongeneracionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\viewmodels\\selecciongeneracionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaui-maui\\viewmodels\\listadopuntuacionesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\viewmodels\\listadopuntuacionesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaui-maui\\models\\clspartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\models\\clspartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Estructura.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:Estructura.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B10F77F-6272-4C2F-A802-33F2B6BFF277}|CapaDAL\\CapaDAL.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capadal\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B10F77F-6272-4C2F-A802-33F2B6BFF277}|CapaDAL\\CapaDAL.csproj|solutionrelative:capadal\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\services\\servicepokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|solutionrelative:services\\servicepokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\services\\servicepuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|solutionrelative:services\\servicepuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749DCC80-7BE8-42B2-A804-4DD33D0515AF}|CapaBL\\CapaBL.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capabl\\clsmanejadorapartidasbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749DCC80-7BE8-42B2-A804-4DD33D0515AF}|CapaBL\\CapaBL.csproj|solutionrelative:capabl\\clsmanejadorapartidasbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B10F77F-6272-4C2F-A802-33F2B6BFF277}|CapaDAL\\CapaDAL.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capadal\\clsmanejadorapartidasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B10F77F-6272-4C2F-A802-33F2B6BFF277}|CapaDAL\\CapaDAL.csproj|solutionrelative:capadal\\clsmanejadorapartidasdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0124DA9A-C5A3-4DDC-AB73-4C38C215C4DF}|CapaENT\\CapaENT.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\capaent\\clspuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0124DA9A-C5A3-4DDC-AB73-4C38C215C4DF}|CapaENT\\CapaENT.csproj|solutionrelative:capaent\\clspuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE6F93E-0DC0-403A-8CAE-943E62D53149}|DTO\\DTO.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\dto\\clspokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAE6F93E-0DC0-403A-8CAE-943E62D53149}|DTO\\DTO.csproj|solutionrelative:dto\\clspokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38BB007E-15AB-47D1-9995-7CBE3FAEAD96}|API\\API.csproj|c:\\users\\pablo\\desktop\\juegopokemon\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{38BB007E-15AB-47D1-9995-7CBE3FAEAD96}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\AppShell.xaml",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\AppShell.xaml",
+              "RelativeToolTip": "CapaUI-Maui\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-02T08:12:07.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\App.xaml",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\App.xaml",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\App.xaml",
+              "RelativeToolTip": "CapaUI-Maui\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-02T08:11:45.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeleccionGeneracionVM.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\SeleccionGeneracionVM.cs",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\ViewModels\\SeleccionGeneracionVM.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\SeleccionGeneracionVM.cs",
+              "RelativeToolTip": "CapaUI-Maui\\ViewModels\\SeleccionGeneracionVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:10:51.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListadoPuntuacionesVM.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\ListadoPuntuacionesVM.cs",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\ViewModels\\ListadoPuntuacionesVM.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\ListadoPuntuacionesVM.cs",
+              "RelativeToolTip": "CapaUI-Maui\\ViewModels\\ListadoPuntuacionesVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:10:37.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClsPartida.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\Models\\ClsPartida.cs",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\Models\\ClsPartida.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaUI-Maui\\Models\\ClsPartida.cs",
+              "RelativeToolTip": "CapaUI-Maui\\Models\\ClsPartida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:09:34.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClsManejadoraPartidasBL.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaBL\\ClsManejadoraPartidasBL.cs",
+              "RelativeDocumentMoniker": "CapaBL\\ClsManejadoraPartidasBL.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaBL\\ClsManejadoraPartidasBL.cs",
+              "RelativeToolTip": "CapaBL\\ClsManejadoraPartidasBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:06:06.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClsManejadoraPartidasDAL.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaDAL\\ClsManejadoraPartidasDAL.cs",
+              "RelativeDocumentMoniker": "CapaDAL\\ClsManejadoraPartidasDAL.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaDAL\\ClsManejadoraPartidasDAL.cs",
+              "RelativeToolTip": "CapaDAL\\ClsManejadoraPartidasDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:05:48.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClsConexion.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaDAL\\ClsConexion.cs",
+              "RelativeDocumentMoniker": "CapaDAL\\ClsConexion.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaDAL\\ClsConexion.cs",
+              "RelativeToolTip": "CapaDAL\\ClsConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:05:29.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClsPuntuacion.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaENT\\ClsPuntuacion.cs",
+              "RelativeDocumentMoniker": "CapaENT\\ClsPuntuacion.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\CapaENT\\ClsPuntuacion.cs",
+              "RelativeToolTip": "CapaENT\\ClsPuntuacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:05:01.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicePuntuacion.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\ServicePuntuacion.cs",
+              "RelativeDocumentMoniker": "Services\\ServicePuntuacion.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\ServicePuntuacion.cs",
+              "RelativeToolTip": "Services\\ServicePuntuacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:03:44.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServicePokemon.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\ServicePokemon.cs",
+              "RelativeDocumentMoniker": "Services\\ServicePokemon.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\ServicePokemon.cs",
+              "RelativeToolTip": "Services\\ServicePokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:57:45.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Estructura.txt",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Estructura.txt",
+              "RelativeDocumentMoniker": "Estructura.txt",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Estructura.txt",
+              "RelativeToolTip": "Estructura.txt",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAkwHMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-02T07:57:13.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClsPokemon.cs",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\DTO\\ClsPokemon.cs",
+              "RelativeDocumentMoniker": "DTO\\ClsPokemon.cs",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\DTO\\ClsPokemon.cs",
+              "RelativeToolTip": "DTO\\ClsPokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:04:11.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Services",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-02T08:00:30.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "API",
+              "DocumentMoniker": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-02T07:59:31.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f6c90d9a-1aa8-32e5-baac-467b7262213c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

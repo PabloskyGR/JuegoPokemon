@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "CapaUI_ASP.Controllers.Api.PuntuacionesController",
+    "Method": "Get",
+    "RelativePath": "api/Puntuaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CapaUI_ASP.Controllers.Api.PuntuacionesController",
+    "Method": "Post",
+    "RelativePath": "api/Puntuaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puntuacion",
+        "Type": "CapaENT.ClsPuntuacion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

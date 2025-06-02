@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapaUI_Maui.Views.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" BackgroundColor="#3B4CCAAA">
+            <Label
+                Text="¡Bienvenido a Pokémon Quiz!"
+                Style="{StaticResource PokemonTitleStyle}"
+                FontSize="28" />
+            <Frame
+                BackgroundColor="{StaticResource PokemonBlue}"
+                CornerRadius="10"
+                Padding="10"
+                Margin="0,10">
+                <Label
+                    Style="{StaticResource PokemonTextStyle}"
+                    LineBreakMode="WordWrap">
+                    <![CDATA[
+¡Bienvenido a Pokémon Quiz!
+
+Reglas del juego:
+- Selecciona una generación de Pokémon.
+- Adivina el Pokémon que aparece en la imagen en 5 segundos.
+- Ganas +1 punto por cada acierto.
+- Pierdes -1 punto si no respondes a tiempo.
+- La partida tiene 20 rondas.
+- Al final, puedes guardar tu puntuación con un nick.
+
+¡Prepárate para ser el mejor entrenador!
+                    ]]>
+                </Label>
+            </Frame>
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

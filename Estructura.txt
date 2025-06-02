@@ -1,0 +1,116 @@
+CAPA ENT
+
+	ClsPuntuacion
+
+		private int id
+		private string nombre
+		private int puntuacion
+
+		public int Id { get }
+		public string Nombre { get, set }
+		public int Puntuacion { get }
+
+		public ClsPuntuacion() { }
+		public ClsPuntuacion(int id, string nombre, int puntuacion) { ... }
+
+CAPA DTO
+
+	ClsPokemon
+
+		private string nombre
+		private string url
+
+		public string Nombre { get }
+		public string Url { get }
+
+		public ClsPokemon() { }
+		public ClsPokemon(string nombre, string url) { ... }
+
+CAPA DAL
+
+	ClsManejadoraPartidasDAL
+
+		public static List<ClsPuntuacion> listadoPuntuacionesDAL() { ... }
+		public static int insertarPuntuacionDAL(ClsPuntuacion puntuacion) { ... }
+
+	ClsConexion
+
+		public SqlConnection getConnection() { ... }
+
+CAPA BL
+
+	ClsManejadoraPartidasBL
+
+		public static List<ClsPuntuacion> listadoPuntuacionesBL() { ... }
+		public static int insertarPuntuacionBL(ClsPuntuacion puntuacion) { ... }
+
+SERVICES
+
+	ServicePokemon
+
+		 public static async Task<List<ClsPokemon>> getPokemons(int offset, int limit) { ... }
+
+	ServicePuntuacion
+
+		public static async Task<List<ClsPuntuacion>> getPuntuaciones() { ... }
+		public static async Task<HttpStatusCode> postPuntuacion(ClsPuntuacion puntuacion) { ... }
+
+CAPA UI - MAUI (JUEGO)
+
+	Models
+
+		Utils
+
+			DelegateCommand
+
+			ClsVMBase
+
+		ClsPartida
+
+			
+			private string nombreSeleccionado
+
+	ViewModels
+
+		juegoViewModel
+
+			private int rondas
+			private int tiempo
+			private int puntos
+			private string nombreSeleccionado
+			private list<ClsPokemon> listaPokemon
+
+			public int Rondas { get }
+			public int Tiempo { get }
+			public int Puntos { get }
+			public string NombreSeleccionado { get, set }
+			public list<ClsPokemon> ListaPokemon { get }
+
+			public juegoViewModel() { ... }
+
+		clasificacionViewModel
+
+			private list<ClsPuntuacion> listadoPuntuaciones
+
+			public list<ClsPuntuacion> ListadoPuntuaciones { get }
+
+			public clasificacionViewModel() { ... }
+
+	Views
+
+		MainPage.xaml
+
+		Juego.xaml
+
+		Clasificacion.xaml
+
+CAPA UI - ASP (API)
+
+	Controller
+
+		Api
+
+			PuntuacionController
+
+				public IActionResult Get() { ... }
+				public IActionResult Post([FromBody] ClsPuntuacion puntuacion)

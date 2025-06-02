@@ -1,0 +1,17 @@
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.deps.json
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaENT.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\DTO.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaENT.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\DTO.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.csproj.AssemblyReference.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.AssemblyInfoInputs.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.AssemblyInfo.cs
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.csproj.Up2Date
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\refint\CapaDAL.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\ref\CapaDAL.dll
