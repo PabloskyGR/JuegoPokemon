@@ -17,3 +17,4 @@ C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\obj\Debug\net8.0\CapaBL.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\obj\Debug\net8.0\refint\CapaBL.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\obj\Debug\net8.0\CapaBL.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\obj\Debug\net8.0\ref\CapaBL.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\obj\Debug\net8.0\CapaBL.sourcelink.json

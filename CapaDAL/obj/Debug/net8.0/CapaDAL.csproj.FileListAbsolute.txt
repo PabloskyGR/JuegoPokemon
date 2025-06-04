@@ -15,3 +15,4 @@ C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\refint\CapaDAL.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\ref\CapaDAL.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\obj\Debug\net8.0\CapaDAL.sourcelink.json

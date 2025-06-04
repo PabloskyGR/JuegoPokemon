@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace DTO
 {
@@ -32,6 +33,7 @@ namespace DTO
         {
         }
 
+        [JsonConstructor]
         public ClsPokemon(string nombre, string urlImagen, int id)
         {
             this.nombre = nombre;

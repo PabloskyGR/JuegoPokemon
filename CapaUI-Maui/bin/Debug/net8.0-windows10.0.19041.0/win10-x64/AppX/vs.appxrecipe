@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-06-02T08:13:18.400</Modified>
+      <Modified>2025-06-04T22:54:40.137</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.dll">
       <PackagePath>CapaUI-Maui.dll</PackagePath>
-      <Modified>2025-06-02T08:13:16.451</Modified>
+      <Modified>2025-06-04T22:54:38.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CapaUI-Maui.exe</PackagePath>
-      <Modified>2025-06-02T08:13:16.461</Modified>
+      <Modified>2025-06-04T22:54:38.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -743,11 +743,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\bin\Debug\net8.0\CapaBL.dll">
       <PackagePath>CapaBL.dll</PackagePath>
-      <Modified>2025-06-02T08:07:16.215</Modified>
+      <Modified>2025-06-04T22:00:16.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.dll">
       <PackagePath>CapaDAL.dll</PackagePath>
-      <Modified>2025-06-02T08:07:15.711</Modified>
+      <Modified>2025-06-04T22:00:16.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.dll">
       <PackagePath>CapaENT.dll</PackagePath>
@@ -755,11 +755,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\DTO\bin\Debug\net8.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>
-      <Modified>2025-06-02T08:07:14.477</Modified>
+      <Modified>2025-06-04T22:00:15.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\Services\bin\Debug\net8.0\Services.dll">
       <PackagePath>Services.dll</PackagePath>
-      <Modified>2025-06-02T08:13:07.976</Modified>
+      <Modified>2025-06-04T22:00:16.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
