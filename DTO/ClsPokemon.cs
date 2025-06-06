@@ -8,7 +8,6 @@ namespace DTO
         #region atributos
         private string nombre;
         private string urlImagen; // URL del sprite del Pokémon (ej. sprites.front_default)
-        private int id;
         #endregion
 
         #region propiedades
@@ -21,11 +20,6 @@ namespace DTO
         {
             get { return urlImagen; }
         }
-
-        public int Id
-        {
-            get { return id; }
-        }
         #endregion
 
         #region constructores
@@ -34,11 +28,10 @@ namespace DTO
         }
 
         [JsonConstructor]
-        public ClsPokemon(string nombre, string urlImagen, int id)
+        public ClsPokemon(string nombre, string urlImagen)
         {
             this.nombre = nombre;
             this.urlImagen = urlImagen;
-            this.id = id;
         }
         #endregion
     }

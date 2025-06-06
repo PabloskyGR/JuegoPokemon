@@ -1,20 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Shell
     x:Class="CapaUI_Maui.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:CapaUI_Maui"
     xmlns:views="clr-namespace:CapaUI_Maui.Views"
-    Title="Juego Pokémon">
+    Title="Juego Pokémon"
+    
+    Shell.TabBarBackgroundColor="#121212"
+    Shell.TabBarForegroundColor="#FFD700"
+    Shell.TabBarTitleColor="#FFD700"
+    Shell.TabBarUnselectedColor="#888888"
+    >
+
     <TabBar>
-        <ShellContent Title="Reglas"
-                     Icon="reglas.png"
-                     ContentTemplate="{DataTemplate views:MainPage}" />
-        <ShellContent Title="Generaciones"
-                     Icon="generaciones.png"
-                     ContentTemplate="{DataTemplate views:GeneracionPage}" />
-        <ShellContent Title="Clasificación"
-                     Icon="clasificacion.png"
-                     ContentTemplate="{DataTemplate views:ClasificacionPage}" />
+        <ShellContent 
+            Title="Reglas"
+            Icon="reglas.png"
+            ContentTemplate="{DataTemplate views:MainPage}" />
+
+        <ShellContent 
+            Title="Generaciones"
+            Icon="generaciones.png"
+            ContentTemplate="{DataTemplate views:GeneracionPage}" />
+
+        <ShellContent 
+            Title="Clasificación"
+            Icon="clasificacion.png"
+            ContentTemplate="{DataTemplate views:ClasificacionPage}" />
     </TabBar>
 </Shell>

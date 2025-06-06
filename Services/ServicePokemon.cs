@@ -35,7 +35,6 @@ namespace Services
                         var responseObject = JsonConvert.DeserializeObject<dynamic>(json);
                         foreach (var result in responseObject.results)
                         {
-                            // Obtener detalles de cada Pokémon
                             string pokemonUrl = result.url;
                             var pokemonResponse = await httpClient.GetAsync(pokemonUrl);
                             if (pokemonResponse.IsSuccessStatusCode)
@@ -44,8 +43,7 @@ namespace Services
                                 var pokemonData = JsonConvert.DeserializeObject<dynamic>(pokemonJson);
                                 string nombre = pokemonData.name.ToString().ToUpper()[0] + pokemonData.name.ToString().Substring(1); // Capitalizar primera letra
                                 string urlImagen = pokemonData.sprites.front_default;
-                                int id = (int)pokemonData.id;
-                                listadoPokemon.Add(new ClsPokemon(nombre, urlImagen, id));
+                                listadoPokemon.Add(new ClsPokemon(nombre, urlImagen));
                             }
                         }
                     }
@@ -58,34 +56,6 @@ namespace Services
             return listadoPokemon;
         }
 
-        /// <summary>
-        /// Obtiene un Pokémon específico por su ID.
-        /// </summary>
-        /// <param name="id">ID del Pokémon.</param>
-        /// <returns>ClsPokemon con nombre, URL de imagen, e ID.</returns>
-        public static async Task<ClsPokemon> GetPokemonById(int id)
-        {
-            using (HttpClient httpClient = new HttpClient())
-            {
-                try
-                {
-                    string url = $"{baseUrl}/{id}";
-                    HttpResponseMessage response = await httpClient.GetAsync(url);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string json = await response.Content.ReadAsStringAsync();
-                        var pokemonData = JsonConvert.DeserializeObject<dynamic>(json);
-                        string nombre = pokemonData.name.ToString().ToUpper()[0] + pokemonData.name.ToString().Substring(1); // Capitalizar primera letra
-                        string urlImagen = pokemonData.sprites.front_default;
-                        return new ClsPokemon(nombre, urlImagen, id);
-                    }
-                    throw new Exception($"No se encontró el Pokémon con ID {id}");
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Error al obtener el Pokémon por ID", ex);
-                }
-            }
-        }
+       
     }
 }

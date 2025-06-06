@@ -2,74 +2,207 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CapaUI_Maui.Views.JuegoPage"
-             Title="Pokémon Quiz">
+             Title="Pokémon Quiz"
+             BackgroundColor="#121212">
 
-    <Grid Padding="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+    <ContentPage.Resources>
+        <Color x:Key="PokemonYellow">#FFCB05</Color>
+        <Color x:Key="PokemonBlue">#3B4CCA</Color>
+        <Color x:Key="PokemonLightGray">#D3D3D3</Color>
+        <Color x:Key="PokemonDarkGray">#222222</Color>
+        <Color x:Key="PokemonShadow">#80000000</Color>
 
-        <!-- Game Status -->
-        <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center">
-            <Label Text="{Binding Rondas, StringFormat='Ronda: {0}/20'}" 
-                   FontSize="18" 
-                   FontAttributes="Bold" />
-            <Label Text="{Binding Puntos, StringFormat='Puntos: {0}'}" 
-                   FontSize="18" 
-                   FontAttributes="Bold" 
-                   Margin="20,0,0,0" />
-        </StackLayout>
+        <Style x:Key="PokemonButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource PokemonYellow}" />
+            <Setter Property="TextColor" Value="#000000" />
+            <Setter Property="FontFamily" Value="PressStart2P" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="Padding" Value="12,10" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#BFAF1D" Radius="10" Opacity="0.7" Offset="2,2" />
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <!-- Pokémon Image -->
-        <Image Grid.Row="1" 
-               Source="{Binding PartidaActual.PokemonCorrecto.UrlImagen}" 
-               HeightRequest="200" 
-               WidthRequest="200"
-               HorizontalOptions="Center" 
-               Margin="0,20" /> 
+        <Style x:Key="PokemonOptionStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="PressStart2P" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="{StaticResource PokemonLightGray}" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="LineBreakMode" Value="WordWrap" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="{StaticResource PokemonShadow}" Radius="3" Opacity="0.8" Offset="1,1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <!-- Options CollectionView -->
-        <CollectionView Grid.Row="2"
-                        ItemsSource="{Binding PartidaActual.Opciones}"
-                        SelectedItem="{Binding PokemonSeleccionado, Mode=TwoWay}"
-                        SelectionMode="Single"
-                        Margin="0,20">
-            <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" Span="2" />
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Frame BackgroundColor="#2196F3"
-                           CornerRadius="10"
-                           Padding="10"
-                           Margin="5">
-                        <Label Text="{Binding Nombre}"
-                               TextColor="White"
-                               FontSize="16"
+        <Style x:Key="PokemonMessageStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="PressStart2P" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#FFFACD" Radius="4" Opacity="0.9" Offset="1,1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="PokemonTextStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="PressStart2P" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#333333" Radius="2" Opacity="0.7" Offset="1,1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="PokemonTitleStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="PressStart2P" />
+            <Setter Property="FontSize" Value="26" />
+            <Setter Property="TextColor" Value="{StaticResource PokemonYellow}" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#FFD700" Radius="5" Opacity="0.9" Offset="2,2" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Margin" Value="0,10,0,10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="fondo_juego.png"
+               Aspect="AspectFill"
+               Opacity="0.3"
+               InputTransparent="True" />
+
+        <!-- Contenido principal -->
+        <AbsoluteLayout>
+            <Grid AbsoluteLayout.LayoutFlags="All"
+                  AbsoluteLayout.LayoutBounds="0,0,1,1"
+                  RowDefinitions="*"
+                  Padding="20"
+                  BackgroundColor="#3B4CCAAA">
+                <!-- Grid del juego -->
+                <Grid RowDefinitions="Auto,Auto,Auto,*"
+                      RowSpacing="10"
+                      IsVisible="{Binding MostrarJuego}">
+                    <!-- Información de la partida -->
+                    <Grid Grid.Row="0" ColumnDefinitions="*,*">
+                        <Label Grid.Column="0"
+                               Text="{Binding Puntos, StringFormat='Puntos: {0}'}"
+                               Style="{StaticResource PokemonTextStyle}" />
+                        <Label Grid.Column="1"
+                               Text="{Binding Rondas, StringFormat='Ronda: {0}/20'}"
+                               HorizontalOptions="End"
+                               Style="{StaticResource PokemonTextStyle}" />
+                    </Grid>
+
+                    <!-- Temporizador -->
+                    <Label Grid.Row="1"
+                           Text="{Binding Tiempo, StringFormat='Tiempo: {0}s'}"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource PokemonTextStyle}" />
+
+                    <!-- Imagen del Pokémon -->
+                    <Image Grid.Row="2"
+                           Source="{Binding PartidaActual.PokemonCorrecto.UrlImagen}"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           HorizontalOptions="Center"
+                           Margin="0,20" />
+
+                    <!-- Opciones de respuesta (CollectionView) -->
+                    <CollectionView Grid.Row="3"
+                                    ItemsSource="{Binding PartidaActual.Opciones}"
+                                    SelectionMode="Single"
+                                    SelectedItem="{Binding PokemonSeleccionado, Mode=TwoWay}"
+                                    MinimumWidthRequest="500"
+                                    MaximumWidthRequest="500"
+                                    TranslationY="80"
+                                    Margin="0,10">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical"
+                                             VerticalItemSpacing="8"
+                                             HorizontalItemSpacing="8"
+                                             Span="2" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame Padding="12"
+                                       HeightRequest="100"
+                                       BackgroundColor="{StaticResource PokemonBlue}"
+                                       CornerRadius="14"
+                                       HasShadow="True">
+                                    <Label Text="{Binding Nombre}"
+                                           Style="{StaticResource PokemonOptionStyle}" />
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                        <CollectionView.Shadow>
+                            <Shadow Brush="#703620"
+                                    Radius="10"
+                                    Offset="0,10" />
+                        </CollectionView.Shadow>
+                    </CollectionView>
+                </Grid>
+
+                <!-- Grid del formulario final -->
+                <Grid IsVisible="{Binding MostrarGuardar}">
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="10">
+                        <Label Grid.Row="0"
+                               Text="¡Juego terminado!"
+                               Style="{StaticResource PokemonTitleStyle}" />
+                        <Label Grid.Row="1"
+                               Text="{Binding Puntos, StringFormat='Puntuación final: {0} puntos'}"
+                               Style="{StaticResource PokemonTextStyle}"
                                HorizontalOptions="Center" />
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                        <Entry Grid.Row="2"
+                               Placeholder="Introduce tu nick"
+                               Text="{Binding NombreJugador, Mode=TwoWay}"
+                               HorizontalOptions="Center"
+                               WidthRequest="200"
+                               Margin="0,10" />
+                        <Grid Grid.Row="3" ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <Button Grid.Column="0"
+                                    Text="Guardar"
+                                    Command="{Binding BotonGuardarCommand}"
+                                    Style="{StaticResource PokemonButtonStyle}"
+                                    HorizontalOptions="Center" />
+                            <Button Grid.Column="1"
+                                    Text="Cancelar"
+                                    Command="{Binding BotonCancelarCommand}"
+                                    Style="{StaticResource PokemonButtonStyle}"
+                                    HorizontalOptions="Center" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
 
-        <!-- Save Score Section -->
-        <StackLayout Grid.Row="3" 
-                    IsVisible="{Binding MostrarGuardar}"
-                    Margin="0,20"
-                    Spacing="10">
-            <Entry Placeholder="Ingresa tu nombre"
-                   Text="{Binding NombreJugador}"
-                   HorizontalOptions="FillAndExpand" />
-            <Button Text="Guardar Puntuación"
-                    Command="{Binding BotonGuardar}"
-                    BackgroundColor="#4CAF50"
-                    TextColor="White"
-                    CornerRadius="10"
-                    Padding="10"
-                    HorizontalOptions="FillAndExpand" />
-        </StackLayout>
+            <!-- Mensaje de resultado -->
+            <Grid AbsoluteLayout.LayoutFlags="PositionProportional"
+                  IsVisible="{Binding MostrarMensaje}"
+                  BackgroundColor="{Binding ColorMensaje}"
+                  Padding="15"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Start"
+                  >
+                <Label Text="{Binding MensajePuntos}"
+                       Style="{StaticResource PokemonMessageStyle}" />
+            </Grid>
+        </AbsoluteLayout>
     </Grid>
 </ContentPage>

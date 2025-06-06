@@ -13,26 +13,30 @@
         public class ClsPartida : ClsVMBase
         {
 
-            private string nombreSeleccionado;
+            private ClsPokemon pokemonSeleccionado;
             private ClsPokemon pokemonCorrecto;
             private List<ClsPokemon> opciones;
+            private bool esCorrecto;
 
-            public string NombreSeleccionado
-            {
-                get { return nombreSeleccionado; }
-                set { nombreSeleccionado = value; NotifyPropertyChanged(nameof(NombreSeleccionado)); }
+            public ClsPokemon PokemonSeleccionado
+        {
+                get { return pokemonSeleccionado; }
+                set { pokemonSeleccionado = value; comprobarRespuesta();  }
             }
 
             public ClsPokemon PokemonCorrecto
             {
                get { return pokemonCorrecto; }
-               set { pokemonCorrecto = value; NotifyPropertyChanged(nameof(PokemonCorrecto)); }
             }
 
             public List<ClsPokemon> Opciones
             {
                 get { return opciones; }
-                set { opciones = value; NotifyPropertyChanged(nameof(Opciones)); }
+            }
+
+            public bool EsCorrecto
+            {
+                get { return esCorrecto; }
             }
   
             public ClsPartida()
@@ -45,8 +49,20 @@
             {
                 this.pokemonCorrecto = pokemonCorrecto;
                 this.opciones = opciones;
-                this.nombreSeleccionado = string.Empty;
+                this.pokemonSeleccionado = null;
             }
 
+        private void comprobarRespuesta()
+        {
+            if (PokemonSeleccionado == null)
+            {
+                esCorrecto = false;
+            }
+            else
+            {
+                esCorrecto = PokemonSeleccionado == PokemonCorrecto;
+            }
+        }
+
     }
-    }
+}

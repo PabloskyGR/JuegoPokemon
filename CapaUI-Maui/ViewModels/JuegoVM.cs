@@ -1,35 +1,41 @@
-﻿using CapaUI_Maui.Models;
+﻿using CapaENT;
+using CapaUI_Maui.Models;
 using CapaUI_Maui.Models.Utils;
+using CapaUI_Maui.Views;
 using DTO;
-using System;
-using System.Collections.Generic;
+using Services;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaUI_Maui.ViewModels
 {
-    public class JuegoVM: ClsVMBase
+    public class JuegoVM : ClsVMBase
     {
         #region atributos
+        // Atributos que solo hara falta en la clase
         private ObservableCollection<ClsPartida> partidas;
+        private IDispatcherTimer timerGlobal;
+        private IDispatcherTimer mensajeTimer;
+        private int indicePartidaActual;
+
+        private List<ClsPokemon> listadoPokemons;
+
+        // Atributos que tendrán una propiedades para que la vista pueda usarlos
         private ClsPartida partidaActual;
+        private ClsPokemon pokemonSeleccionado; // Atributo que está también en el modelo pero para que la vista pueda usarlo
+        private Color colorMensaje;
+        private DelegateCommand botonGuardarCommand;
+        private DelegateCommand botonCancelarCommand;
         private int puntos;
         private int rondas;
         private int tiempo;
         private bool mostrarGuardar;
-        private DelegateCommand botonGuardar;
+        private bool mostrarJuego;
+        private bool mostrarMensaje;
         private string nombreJugador;
-        private ClsPokemon pokemonSeleccionado;
+        private string mensajePuntos;
         #endregion
 
-        #region propiedades
-        public ObservableCollection<ClsPartida> Partidas
-        {
-            get { return partidas; }
-        }
-        
+        #region propiedades 
         public ClsPartida PartidaActual
         {
             get { return partidaActual; }
@@ -50,20 +56,48 @@ namespace CapaUI_Maui.ViewModels
             get { return tiempo; }
         }
 
+        public bool MostrarJuego
+        {
+            get { return mostrarJuego; }
+        }
+
         public bool MostrarGuardar
         {
             get { return mostrarGuardar; }
         }
 
-        public DelegateCommand BotonGuardar
+        public DelegateCommand BotonGuardarCommand
         {
-            get { return botonGuardar; }
+            get { return botonGuardarCommand; }
+        }
+
+        public DelegateCommand BotonCancelarCommand
+        {
+            get { return botonCancelarCommand; }
         }
 
         public string NombreJugador
         {
             get { return nombreJugador; }
-            set { nombreJugador = value; }
+            set { 
+                    nombreJugador = value;
+                botonGuardarCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        public string MensajePuntos
+        {
+            get { return mensajePuntos; }
+        }
+
+        public bool MostrarMensaje
+        {
+            get { return mostrarMensaje; }
+        }
+
+        public Color ColorMensaje
+        {
+            get { return colorMensaje; }
         }
 
         public ClsPokemon PokemonSeleccionado
@@ -71,22 +105,10 @@ namespace CapaUI_Maui.ViewModels
             get { return pokemonSeleccionado; }
             set
             {
-                if (pokemonSeleccionado != value)
+                if (partidaActual != null && value != null)
                 {
-                    pokemonSeleccionado = value;
-                    NotifyPropertyChanged(nameof(PokemonSeleccionado));
-
-                    if (pokemonSeleccionado != null && !MostrarGuardar)
-                    {
-                        // Actualizar modelo
-                        partidaActual.NombreSeleccionado = pokemonSeleccionado.Nombre;
-
-                        // Procesar respuesta
-                        _ = SeleccionarRespuesta(pokemonSeleccionado.Nombre, partidaActual.Opciones);
-
-                        // Limpiar selección para permitir nueva selección
-                        PokemonSeleccionado = null;
-                    }
+                    partidaActual.PokemonSeleccionado = value;
+                    comprobarRespuesta(partidaActual.PokemonSeleccionado); 
                 }
             }
         }
@@ -95,113 +117,201 @@ namespace CapaUI_Maui.ViewModels
         #region constructores
         public JuegoVM()
         {
-
         }
 
         public JuegoVM(List<ClsPokemon> listadoPokemons)
         {
+            this.listadoPokemons = listadoPokemons;
             partidas = new ObservableCollection<ClsPartida>();
-            partidaActual = new ClsPartida();
             puntos = 0;
-            rondas = 0;
+            rondas = 1;
             tiempo = 5;
             mostrarGuardar = false;
-            botonGuardar = new DelegateCommand(GuardarPuntuacion, PuedeGuardar);
-            IniciarRonda(listadoPokemons);
+            mostrarMensaje = false;
+            mostrarJuego = true;
+            nombreJugador = "";
+            mensajePuntos = "";
+            colorMensaje = Colors.Transparent;
+            indicePartidaActual = 0;
+            pokemonSeleccionado = null;
+            botonGuardarCommand = new DelegateCommand(guardarPuntuacion, puedeGuardar);
+            botonCancelarCommand = new DelegateCommand(Cancelar);
+            iniciarJuego();
         }
         #endregion
 
-        #region métodos
-        public void IniciarRonda(List<ClsPokemon> listadoPokemons)
+        #region Métodos
+        private void iniciarJuego()
         {
-            if (rondas < 20)
+            crearPartidas();
+            siguientePartida();
+            iniciarTemporizadorPregunta();
+        }
+
+        private void iniciarTemporizadorPregunta()
+        {
+            tiempo = 5;
+            NotifyPropertyChanged(nameof(Tiempo));
+
+            timerGlobal = Application.Current.Dispatcher.CreateTimer();
+            timerGlobal.Interval = TimeSpan.FromSeconds(1);
+            timerGlobal.Tick += timer_Tick;
+            timerGlobal.Start();
+        }
+
+        private async void timer_Tick(object sender, EventArgs e)
+        {
+            if (tiempo > 0)
             {
-                rondas++;
-                NotifyPropertyChanged(nameof(Rondas));
+                tiempo--;
+                NotifyPropertyChanged(nameof(Tiempo));
+            }
+            else
+            {
+                timerGlobal.Stop(); // Stop any existing timer
+                comprobarRespuesta(null);
+            }
+        }
 
-                var random = new Random();
-                var pokemonCorrecto = listadoPokemons[random.Next(listadoPokemons.Count)];
+        private void crearPartidas()
+        {
+            Random random = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                ClsPokemon pokemonCorrecto = listadoPokemons[random.Next(listadoPokemons.Count)];
 
-                var opcionesIncorrectas = listadoPokemons
-                    .Where(p => p.Id != pokemonCorrecto.Id)
-                    .OrderBy(x => random.Next())
-                    .Take(3)
-                    .ToList();
+                List<ClsPokemon> opcionesIncorrectas = new List<ClsPokemon>();
+                while (opcionesIncorrectas.Count < 3)
+                {
+                    ClsPokemon opcion = listadoPokemons[random.Next(listadoPokemons.Count)];
+                    if (opcion.Nombre != pokemonCorrecto.Nombre && !opcionesIncorrectas.Any(p => p.Nombre == opcion.Nombre))
+                    {
+                        opcionesIncorrectas.Add(opcion);
+                    }
+                }
 
-                var opciones = new List<ClsPokemon> { pokemonCorrecto };
+                List<ClsPokemon> opciones = new List<ClsPokemon> { pokemonCorrecto };
                 opciones.AddRange(opcionesIncorrectas);
                 opciones = opciones.OrderBy(x => random.Next()).ToList();
 
-                // Crear nueva partidaActual
-                partidaActual = new ClsPartida
-                {
-                    PokemonCorrecto = pokemonCorrecto,
-                    Opciones = opciones,
-                    NombreSeleccionado = string.Empty
-                };
+                ClsPartida partida = new ClsPartida(pokemonCorrecto, opciones);
+                partidas.Add(partida);
+            }
+        }
 
-                partidas.Add(partidaActual);
-                PokemonSeleccionado = null;
+        private void siguientePartida()
+        {
+            // Comprobamos si quedan partidas en la lista para jugar, para que asi no siga y evitar un IndexOutOfRangeException
+            if (indicePartidaActual < partidas.Count)
+            {
+                partidaActual = partidas[indicePartidaActual];
+                pokemonSeleccionado = null;
                 NotifyPropertyChanged(nameof(PartidaActual));
-                NotifyPropertyChanged(nameof(Partidas));
-            }
-            else
-            {
-                mostrarGuardar = true;
-                NotifyPropertyChanged(nameof(MostrarGuardar));
+                NotifyPropertyChanged(nameof(Rondas));
+                indicePartidaActual++;
             }
         }
 
-
-        public async Task SeleccionarRespuesta(string nombreSeleccionado, List<ClsPokemon> listadoPokemons)
+        private void comprobarRespuesta(ClsPokemon seleccion)
         {
-            // Calcular puntuación
-            if (nombreSeleccionado == PartidaActual.PokemonCorrecto.Nombre)
-            {
-                puntos += 5;
-            }
-            else
-            {
-                puntos -= 1;
-            }
-            NotifyPropertyChanged(nameof(Puntos));
+            timerGlobal.Stop();
 
-            // Mostrar resultado
-            string mensaje = nombreSeleccionado == PartidaActual.PokemonCorrecto.Nombre ? "¡Correcto! +5 puntos" : "Incorrecto, -1 punto";
-            await Application.Current.MainPage.DisplayAlert("Resultado", mensaje, "Continuar");
-
-            // Pasar a siguiente ronda solo si no estamos en la fase de guardar
-            if (!MostrarGuardar)
+            // Mientras hayan menos o igual de 20 rondas se sigue comrpobando las partidas,
+            // para asi evitar qyue cuando acaben las partidas no isga la puntuacion restando por no responder
+            if (rondas <= 20) 
             {
-                IniciarRonda(listadoPokemons);
-            }
-        }
-
-        private async void GuardarPuntuacion()
-        {
-            if (!string.IsNullOrWhiteSpace(nombreJugador))
-            {
-                try
+                if (seleccion == null)
                 {
-                    // TODO: Llamar al servicio de la API para guardar la puntuación
-                    // Ejemplo: await PuntuacionService.GuardarPuntuacion(nombreJugador, puntos);
-                    await Application.Current.MainPage.DisplayAlert("Éxito", $"Puntuación de {puntos} guardada para {nombreJugador}", "Aceptar");
+                    puntos -= 1;
+                    mensajePuntos = "¡Tiempo agotado! (-1 punto)";
+                    colorMensaje = Colors.Orange;
                 }
-                catch (Exception ex)
+                else if (partidaActual.EsCorrecto)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo guardar la puntuación: {ex.Message}", "Aceptar");
+                    puntos += tiempo;
+                    mensajePuntos = $"¡Correcto! (+{tiempo} puntos)";
+                    colorMensaje = Colors.Green;
+                }
+                else
+                {
+                    puntos -= 1;
+                    mensajePuntos = "¡Incorrecto! (-1 punto)";
+                    colorMensaje = Colors.Red;
+                }
+
+                mostrarMensaje = true;
+                NotifyPropertyChanged(nameof(Puntos));
+                NotifyPropertyChanged(nameof(MensajePuntos));
+                NotifyPropertyChanged(nameof(MostrarMensaje));
+                NotifyPropertyChanged(nameof(ColorMensaje));
+
+                mensajeTimer = Application.Current.Dispatcher.CreateTimer();
+                mensajeTimer.Interval = TimeSpan.FromSeconds(1);
+                mensajeTimer.Tick += mensajeTimer_Tick;
+                mensajeTimer.Start();
+
+                rondas++; // Incrementamos ronda aquí, después de evaluar la respuesta
+                NotifyPropertyChanged(nameof(Rondas));
+
+                // Volvemos a comprobar para que no se añada una ronda extra y quite un punto por restarse el teimpo
+                if (rondas <= 20)
+                {
+                    siguientePartida();
+                    iniciarTemporizadorPregunta();
+                }
+                else
+                {
+                    // Final del juego
+                    mensajeTimer.Stop();
+                    mostrarGuardar = true;
+                    mostrarJuego = false;
+                    NotifyPropertyChanged(nameof(MostrarGuardar));
+                    NotifyPropertyChanged(nameof(MostrarJuego));
                 }
             }
-            await Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        private bool PuedeGuardar()
+        private void mensajeTimer_Tick(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(nombreJugador))
+            mensajeTimer.Stop();
+            mostrarMensaje = false;
+            colorMensaje = Colors.Transparent;
+            NotifyPropertyChanged(nameof(MostrarMensaje));
+            NotifyPropertyChanged(nameof(ColorMensaje));
+        }
+
+        private async void guardarPuntuacion()
+        {
+            if (nombreJugador != string.Empty && nombreJugador != null)
             {
-                return false;
+                ClsPuntuacion puntuacion = new ClsPuntuacion(0, nombreJugador, puntos);
+                var statusCode = await ServicePuntuacion.postPuntuacion(puntuacion);
+
+                if (statusCode != System.Net.HttpStatusCode.OK)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo guardar la puntuación. Status: {statusCode}", "OK");
+                }
             }
-            return true;
+
+            await Application.Current.MainPage.Navigation.PushAsync(new GeneracionPage());
+        }
+
+        private bool puedeGuardar()
+        {
+
+            bool guardar = false;
+
+            if (nombreJugador != string.Empty)
+            {
+                guardar = true;
+            }
+
+            return guardar;
+        }
+
+        private async void Cancelar()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new GeneracionPage());
         }
         #endregion
     }

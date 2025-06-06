@@ -88,3 +88,4 @@ C:\Users\pablo\Desktop\JuegoPokemon\API\obj\Debug\net8.0\refint\API.dll
 C:\Users\pablo\Desktop\JuegoPokemon\API\obj\Debug\net8.0\API.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\pablo\Desktop\JuegoPokemon\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\pablo\Desktop\JuegoPokemon\API\obj\Debug\net8.0\API.sourcelink.json

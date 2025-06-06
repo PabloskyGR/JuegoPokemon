@@ -10,3 +10,4 @@ C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\refint\CapaENT.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\ref\CapaENT.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.sourcelink.json

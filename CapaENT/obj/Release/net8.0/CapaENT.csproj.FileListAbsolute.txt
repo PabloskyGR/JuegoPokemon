@@ -1,0 +1,13 @@
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Release\net8.0\CapaENT.deps.json
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Release\net8.0\CapaENT.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Release\net8.0\CapaENT.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.csproj.AssemblyReference.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.AssemblyInfoInputs.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.AssemblyInfo.cs
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.sourcelink.json
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\refint\CapaENT.dll
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\CapaENT.pdb
+C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Release\net8.0\ref\CapaENT.dll

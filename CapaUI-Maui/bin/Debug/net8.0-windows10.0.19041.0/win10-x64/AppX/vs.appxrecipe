@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-06-04T22:54:40.137</Modified>
+      <Modified>2025-06-06T22:29:46.955</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-06-02T08:13:18.060</Modified>
+      <Modified>2025-06-06T22:06:31.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.runtimeconfig.json">
       <PackagePath>CapaUI-Maui.runtimeconfig.json</PackagePath>
-      <Modified>2025-06-02T08:13:17.723</Modified>
+      <Modified>2025-06-06T12:45:34.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.dll">
       <PackagePath>CapaUI-Maui.dll</PackagePath>
-      <Modified>2025-06-04T22:54:38.805</Modified>
+      <Modified>2025-06-06T22:29:46.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CapaUI-Maui.exe</PackagePath>
-      <Modified>2025-06-04T22:54:38.896</Modified>
+      <Modified>2025-06-06T22:29:46.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-06-02T07:42:26.144</Modified>
+      <Modified>2025-06-06T11:18:05.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-06-02T07:42:26.175</Modified>
+      <Modified>2025-06-06T11:18:05.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-06-02T07:42:26.191</Modified>
+      <Modified>2025-06-06T11:18:05.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-06-02T07:42:26.222</Modified>
+      <Modified>2025-06-06T11:18:05.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-06-02T07:42:26.352</Modified>
+      <Modified>2025-06-06T11:18:05.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -81,225 +81,245 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2025-06-02T07:41:42.804</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\PressStart2P-Regular.ttf">
+      <PackagePath>PressStart2P-Regular.ttf</PackagePath>
+      <Modified>2025-06-06T21:37:05.994</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Press_Start_2P.zip">
+      <PackagePath>Press_Start_2P.zip</PackagePath>
+      <Modified>2025-06-06T21:36:35.640</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-06-02T08:10:29.729</Modified>
+      <Modified>2025-06-06T22:06:29.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.659</Modified>
+      <Modified>2025-06-06T22:06:29.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.659</Modified>
+      <Modified>2025-06-06T22:06:29.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.658</Modified>
+      <Modified>2025-06-06T22:06:29.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.657</Modified>
+      <Modified>2025-06-06T22:06:29.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.657</Modified>
+      <Modified>2025-06-06T22:06:29.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.718</Modified>
+      <Modified>2025-06-06T22:06:29.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.717</Modified>
+      <Modified>2025-06-06T22:06:29.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.714</Modified>
+      <Modified>2025-06-06T22:06:29.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.716</Modified>
+      <Modified>2025-06-06T22:06:29.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.715</Modified>
+      <Modified>2025-06-06T22:06:29.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.721</Modified>
+      <Modified>2025-06-06T22:06:29.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.721</Modified>
+      <Modified>2025-06-06T22:06:29.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.718</Modified>
+      <Modified>2025-06-06T22:06:29.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.720</Modified>
+      <Modified>2025-06-06T22:06:29.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.719</Modified>
+      <Modified>2025-06-06T22:06:29.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.728</Modified>
+      <Modified>2025-06-06T22:06:29.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.728</Modified>
+      <Modified>2025-06-06T22:06:29.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.727</Modified>
+      <Modified>2025-06-06T22:06:29.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.726</Modified>
+      <Modified>2025-06-06T22:06:29.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.726</Modified>
+      <Modified>2025-06-06T22:06:29.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.725</Modified>
+      <Modified>2025-06-06T22:06:29.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.724</Modified>
+      <Modified>2025-06-06T22:06:29.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.722</Modified>
+      <Modified>2025-06-06T22:06:29.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.724</Modified>
+      <Modified>2025-06-06T22:06:29.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.723</Modified>
+      <Modified>2025-06-06T22:06:29.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.665</Modified>
+      <Modified>2025-06-06T22:06:29.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.665</Modified>
+      <Modified>2025-06-06T22:06:29.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.664</Modified>
+      <Modified>2025-06-06T22:06:29.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.663</Modified>
+      <Modified>2025-06-06T22:06:29.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.663</Modified>
+      <Modified>2025-06-06T22:06:29.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.669</Modified>
+      <Modified>2025-06-06T22:06:29.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.668</Modified>
+      <Modified>2025-06-06T22:06:29.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.667</Modified>
+      <Modified>2025-06-06T22:06:29.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.667</Modified>
+      <Modified>2025-06-06T22:06:29.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.666</Modified>
+      <Modified>2025-06-06T22:06:29.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.713</Modified>
+      <Modified>2025-06-06T22:06:29.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.671</Modified>
+      <Modified>2025-06-06T22:06:29.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.671</Modified>
+      <Modified>2025-06-06T22:06:29.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.670</Modified>
+      <Modified>2025-06-06T22:06:29.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.669</Modified>
+      <Modified>2025-06-06T22:06:29.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.662</Modified>
+      <Modified>2025-06-06T22:06:29.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.662</Modified>
+      <Modified>2025-06-06T22:06:29.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.661</Modified>
+      <Modified>2025-06-06T22:06:29.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.660</Modified>
+      <Modified>2025-06-06T22:06:29.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.660</Modified>
+      <Modified>2025-06-06T22:06:29.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\clasificacion.scale-100.png">
       <PackagePath>clasificacion.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.656</Modified>
+      <Modified>2025-06-06T22:06:29.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.733</Modified>
+      <Modified>2025-06-06T22:06:29.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.732</Modified>
+      <Modified>2025-06-06T22:06:29.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.731</Modified>
+      <Modified>2025-06-06T22:06:29.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.731</Modified>
+      <Modified>2025-06-06T22:06:29.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.730</Modified>
+      <Modified>2025-06-06T22:06:29.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.png">
+      <PackagePath>fondo.scale-100.png</PackagePath>
+      <Modified>2025-06-06T22:06:29.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_clasi.scale-100.png">
+      <PackagePath>fondo_clasi.scale-100.png</PackagePath>
+      <Modified>2025-06-06T22:06:29.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_juego.scale-100.png">
+      <PackagePath>fondo_juego.scale-100.png</PackagePath>
+      <Modified>2025-06-06T22:06:29.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\generaciones.scale-100.png">
       <PackagePath>generaciones.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.656</Modified>
+      <Modified>2025-06-06T22:06:29.911</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\reglas.scale-100.png">
       <PackagePath>reglas.scale-100.png</PackagePath>
-      <Modified>2025-06-02T08:10:29.655</Modified>
+      <Modified>2025-06-06T22:06:29.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.deps.json">
       <PackagePath>CapaUI-Maui.deps.json</PackagePath>
-      <Modified>2025-06-02T08:13:17.712</Modified>
+      <Modified>2025-06-06T12:45:34.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -743,23 +763,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\bin\Debug\net8.0\CapaBL.dll">
       <PackagePath>CapaBL.dll</PackagePath>
-      <Modified>2025-06-04T22:00:16.652</Modified>
+      <Modified>2025-06-06T11:17:55.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.dll">
       <PackagePath>CapaDAL.dll</PackagePath>
-      <Modified>2025-06-04T22:00:16.359</Modified>
+      <Modified>2025-06-06T11:17:54.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.dll">
       <PackagePath>CapaENT.dll</PackagePath>
-      <Modified>2025-06-02T08:07:14.477</Modified>
+      <Modified>2025-06-06T11:17:54.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\DTO\bin\Debug\net8.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>
-      <Modified>2025-06-04T22:00:15.757</Modified>
+      <Modified>2025-06-06T11:17:54.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\Services\bin\Debug\net8.0\Services.dll">
       <PackagePath>Services.dll</PackagePath>
-      <Modified>2025-06-04T22:00:16.078</Modified>
+      <Modified>2025-06-06T11:17:54.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

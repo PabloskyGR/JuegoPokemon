@@ -1,39 +1,67 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CapaUI_Maui.Views.MainPage">
+             x:Class="CapaUI_Maui.Views.MainPage"
+             BackgroundColor="{StaticResource ArcadeBackground}">
 
-    <ScrollView>
-        <StackLayout Padding="20" BackgroundColor="#3B4CCAAA">
-            <Label
-                Text="¡Bienvenido a Pokémon Quiz!"
-                Style="{StaticResource PokemonTitleStyle}"
-                FontSize="28" />
-            <Frame
-                BackgroundColor="{StaticResource PokemonBlue}"
-                CornerRadius="10"
-                Padding="10"
-                Margin="0,10">
-                <Label
-                    Style="{StaticResource PokemonTextStyle}"
-                    LineBreakMode="WordWrap">
-                    <![CDATA[
-¡Bienvenido a Pokémon Quiz!
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="fondo.png"
+               Aspect="AspectFill"
+               Opacity="0.3"
+               InputTransparent="True" />
 
-Reglas del juego:
-- Selecciona una generación de Pokémon.
-- Adivina el Pokémon que aparece en la imagen en 5 segundos.
-- Ganas +1 punto por cada acierto.
-- Pierdes -1 punto si no respondes a tiempo.
-- La partida tiene 20 rondas.
-- Al final, puedes guardar tu puntuación con un nick.
+        <!-- Contenido encima -->
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="¡Bienvenido a Pokémon Quiz!"
+                       Style="{StaticResource ArcadeTitleStyle}" />
 
-¡Prepárate para ser el mejor entrenador!
-                    ]]>
-                </Label>
-            </Frame>
-            
-        </StackLayout>
-    </ScrollView>
+                <Frame Style="{StaticResource ArcadeFrameStyle}" Padding="15">
+                    <StackLayout Spacing="12">
+                        <Label Text="¡Bienvenido a Pokémon Quiz!"
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
 
+                        <Label Text="Reglas del juego:"
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5"
+                               FontAttributes="Bold" />
+
+                        <Label Text="- Selecciona una generación de Pokémon."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- Adivina el Pokémon que aparece en la imagen en 5 segundos."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- Ganas puntos dependiendo del tiempo que tardes en responder la pregunta."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- Pierdes -2 puntos si te equivocas."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- Pierdes -1 punto si no respondes a tiempo."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- La partida tiene 20 rondas."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="- Al final, puedes guardar tu puntuación con un nick."
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5" />
+
+                        <Label Text="¡Prepárate para ser el mejor entrenador!"
+                               Style="{StaticResource ArcadeTextStyle}"
+                               LineHeight="1.5"
+                               FontAttributes="Italic" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

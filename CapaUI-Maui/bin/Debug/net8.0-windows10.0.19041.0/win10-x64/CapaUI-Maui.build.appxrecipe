@@ -61,6 +61,12 @@
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\PressStart2P-Regular.ttf">
+      <PackagePath>PressStart2P-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Press_Start_2P.zip">
+      <PackagePath>Press_Start_2P.zip</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -216,6 +222,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.png">
+      <PackagePath>fondo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_clasi.scale-100.png">
+      <PackagePath>fondo_clasi.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo_juego.scale-100.png">
+      <PackagePath>fondo_juego.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\generaciones.scale-100.png">
       <PackagePath>generaciones.scale-100.png</PackagePath>

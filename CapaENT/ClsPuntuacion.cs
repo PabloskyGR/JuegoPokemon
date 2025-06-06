@@ -25,9 +25,11 @@ namespace CapaENT
             get { return nombre; }
             set { nombre = value; }
         }
+
         public int Puntuacion
         {
             get { return puntuacion; }
+            set { puntuacion = value; }
         }
         #endregion
 
