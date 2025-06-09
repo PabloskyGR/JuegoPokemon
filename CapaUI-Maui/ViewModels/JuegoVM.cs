@@ -135,7 +135,7 @@ namespace CapaUI_Maui.ViewModels
             indicePartidaActual = 0;
             pokemonSeleccionado = null;
             botonGuardarCommand = new DelegateCommand(guardarPuntuacion, puedeGuardar);
-            botonCancelarCommand = new DelegateCommand(Cancelar);
+            botonCancelarCommand = new DelegateCommand(cancelar);
             iniciarJuego();
         }
         #endregion
@@ -309,7 +309,7 @@ namespace CapaUI_Maui.ViewModels
             return guardar;
         }
 
-        private async void Cancelar()
+        private async void cancelar()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new GeneracionPage());
         }

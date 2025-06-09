@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CapaUI-Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b11a38d2a64e26ba6330be3ee74f251fb3c7920a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+85ac99bc1b225e60b2d2c66e108d2fffd15b8779")]
 [assembly: System.Reflection.AssemblyProductAttribute("CapaUI-Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CapaUI-Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

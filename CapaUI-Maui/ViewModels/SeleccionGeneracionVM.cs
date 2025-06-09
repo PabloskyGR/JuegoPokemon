@@ -16,11 +16,12 @@ namespace CapaUI_Maui.ViewModels
         private List<string> generaciones;
         private string generacionSeleccionada;
         private DelegateCommand botonGeneracionCommand;
-
-        // Temporizador y contador para la cuenta regresiva
         private IDispatcherTimer contadorTimer;
         private int contadorPreparacion;
-        private bool mostrandoPreparacion;
+        private bool mostrarPreparacion;
+        private bool mostrarCargando;
+
+        private List<ClsPokemon> listadoPokemons;
         #endregion
 
         #region propiedades
@@ -51,21 +52,16 @@ namespace CapaUI_Maui.ViewModels
         public int ContadorPreparacion
         {
             get { return contadorPreparacion; }
-            private set
-            {
-                contadorPreparacion = value;
-                NotifyPropertyChanged(nameof(ContadorPreparacion));
-            }
         }
 
-        public bool MostrandoPreparacion
+        public bool MostrarPreparacion
         {
-            get { return mostrandoPreparacion; }
-            private set
-            {
-                mostrandoPreparacion = value;
-                NotifyPropertyChanged(nameof(MostrandoPreparacion));
-            }
+            get { return mostrarPreparacion; }
+        }
+
+        public bool MostrarCargando
+        {
+            get { return mostrarCargando; }
         }
         #endregion
 
@@ -86,84 +82,54 @@ namespace CapaUI_Maui.ViewModels
                 "Generación 9"
             };
             generacionSeleccionada = generaciones[0];
-            botonGeneracionCommand = new DelegateCommand(async () => await jugar(), puedeJugar);
+            botonGeneracionCommand = new DelegateCommand(jugar, puedeJugar);
 
-            MostrandoPreparacion = false;
-            ContadorPreparacion = 0;
+            mostrarPreparacion = false;
+            mostrarCargando = false;
+            contadorPreparacion = 0;
         }
         #endregion
 
         #region métodos
-        private async Task jugar()
+        private async void jugar()
         {
-            if (generacionSeleccionada == "--Seleccione una generación--")
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", "Debe seleccionar una generación", "Aceptar");
-                return;
-            }
 
             // Iniciar cuenta regresiva
-            MostrandoPreparacion = true;
-            ContadorPreparacion = 5;
+            mostrarPreparacion = false;
+            mostrarCargando = true;
+            NotifyPropertyChanged(nameof(MostrarPreparacion));
+            NotifyPropertyChanged(nameof(MostrarCargando));
 
-            if (contadorTimer != null)
+            listadoPokemons = await obtenerPokemons();
+
+            if (listadoPokemons.Count > 0)
             {
-                contadorTimer.Stop();
-                contadorTimer = null;
-            }
+                contadorPreparacion = 5;
+                mostrarPreparacion = true;
+                mostrarCargando = false;
+                NotifyPropertyChanged(nameof(MostrarPreparacion));
+                NotifyPropertyChanged(nameof(MostrarCargando));
+                NotifyPropertyChanged(nameof(ContadorPreparacion));
 
-            contadorTimer = Application.Current.Dispatcher.CreateTimer();
-            contadorTimer.Interval = TimeSpan.FromSeconds(2);
-            contadorTimer.Tick += ContadorTimer_Tick;
-            contadorTimer.Start();
+                contadorTimer = Application.Current.Dispatcher.CreateTimer();
+                contadorTimer.Interval = TimeSpan.FromSeconds(1);
+                contadorTimer.Tick += contadorTimer_Tick;
+                contadorTimer.Start();
+            }
         }
 
-        private async void ContadorTimer_Tick(object sender, EventArgs e)
+        private async void contadorTimer_Tick(object sender, EventArgs e)
         {
             if (ContadorPreparacion > 0)
             {
-                ContadorPreparacion--;
+                contadorPreparacion--;
+                NotifyPropertyChanged(nameof(ContadorPreparacion));
             }
             else
             {
                 contadorTimer.Stop();
-
-                // Llamada a la API y navegación
-                List<ClsPokemon> listadoPokemons = new List<ClsPokemon>();
-
-                switch (generacionSeleccionada)
-                {
-                    case "Generación 1":
-                        listadoPokemons = await ServicePokemon.getPokemon(0, 151);
-                        break;
-                    case "Generación 2":
-                        listadoPokemons = await ServicePokemon.getPokemon(151, 100);
-                        break;
-                    case "Generación 3":
-                        listadoPokemons = await ServicePokemon.getPokemon(251, 135);
-                        break;
-                    case "Generación 4":
-                        listadoPokemons = await ServicePokemon.getPokemon(386, 107);
-                        break;
-                    case "Generación 5":
-                        listadoPokemons = await ServicePokemon.getPokemon(493, 156);
-                        break;
-                    case "Generación 6":
-                        listadoPokemons = await ServicePokemon.getPokemon(649, 72);
-                        break;
-                    case "Generación 7":
-                        listadoPokemons = await ServicePokemon.getPokemon(721, 88);
-                        break;
-                    case "Generación 8":
-                        listadoPokemons = await ServicePokemon.getPokemon(809, 96);
-                        break;
-                    case "Generación 9":
-                        listadoPokemons = await ServicePokemon.getPokemon(905, 105);
-                        break;
-                    default:
-                        listadoPokemons = new List<ClsPokemon>();
-                        break;
-                }
+                mostrarPreparacion = false;
+                NotifyPropertyChanged(nameof(MostrarPreparacion));
 
                 await Application.Current.MainPage.Navigation.PushAsync(new JuegoPage(listadoPokemons));
             }
@@ -171,7 +137,55 @@ namespace CapaUI_Maui.ViewModels
 
         private bool puedeJugar()
         {
-            return generacionSeleccionada != "--Seleccione una generación--" && !MostrandoPreparacion;
+            bool puedeJugar = false;
+
+            if (generacionSeleccionada != "--Seleccione una generación--")
+            {
+                puedeJugar = true;
+            }
+            return puedeJugar;
+        }
+
+        public async Task<List<ClsPokemon>> obtenerPokemons()
+        {
+            // Llamada a la API y navegación
+            List<ClsPokemon> listadoPokemons = new List<ClsPokemon>();
+
+            switch (generacionSeleccionada)
+            {
+                case "Generación 1":
+                    listadoPokemons = await ServicePokemon.getPokemon(0, 151);
+                    break;
+                case "Generación 2":
+                    listadoPokemons = await ServicePokemon.getPokemon(151, 100);
+                    break;
+                case "Generación 3":
+                    listadoPokemons = await ServicePokemon.getPokemon(251, 135);
+                    break;
+                case "Generación 4":
+                    listadoPokemons = await ServicePokemon.getPokemon(386, 107);
+                    break;
+                case "Generación 5":
+                    listadoPokemons = await ServicePokemon.getPokemon(493, 156);
+                    break;
+                case "Generación 6":
+                    listadoPokemons = await ServicePokemon.getPokemon(649, 72);
+                    break;
+                case "Generación 7":
+                    listadoPokemons = await ServicePokemon.getPokemon(721, 88);
+                    break;
+                case "Generación 8":
+                    listadoPokemons = await ServicePokemon.getPokemon(809, 96);
+                    break;
+                case "Generación 9":
+                    listadoPokemons = await ServicePokemon.getPokemon(905, 105);
+                    break;
+                default:
+                    listadoPokemons = new List<ClsPokemon>();
+                    break;
+            }
+
+            return listadoPokemons;
         }
         #endregion
     }

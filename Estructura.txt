@@ -8,7 +8,7 @@ CAPA ENT
 
 		public int Id { get }
 		public string Nombre { get, set }
-		public int Puntuacion { get }
+		public int Puntuacion { get, set }
 
 		public ClsPuntuacion() { }
 		public ClsPuntuacion(int id, string nombre, int puntuacion) { ... }
@@ -18,13 +18,13 @@ CAPA DTO
 	ClsPokemon
 
 		private string nombre
-		private string url
+		private string urlImagen
 
 		public string Nombre { get }
-		public string Url { get }
+		public string UrlImagen { get }
 
 		public ClsPokemon() { }
-		public ClsPokemon(string nombre, string url) { ... }
+		public ClsPokemon(string nombre, string urlImagen) { ... }
 
 CAPA DAL
 
@@ -48,7 +48,7 @@ SERVICES
 
 	ServicePokemon
 
-		 public static async Task<List<ClsPokemon>> getPokemons(int offset, int limit) { ... }
+		 public static async Task<List<ClsPokemon>> getPokemon(int offset, int limit) { ... }
 
 	ServicePuntuacion
 
@@ -67,28 +67,74 @@ CAPA UI - MAUI (JUEGO)
 
 		ClsPartida
 
-			
-			private string nombreSeleccionado
+			private ClsPokemon pokemonSeleccionado
+            private ClsPokemon pokemonCorrecto
+            private List<ClsPokemon> opciones
+            private bool esCorrecto
+
+			public ClsPokemon PokemonSeleccionado { get, set }
+            public ClsPokemon PokemonCorrecto { get }
+            public List<ClsPokemon> Opciones { get }
+            public bool EsCorrecto { get }
+
+			public ClsPartida() { ... }
+			public ClsPartida(ClsPokemon pokemonCorrecto, List<ClsPokemon> opciones) { ... }
 
 	ViewModels
 
-		juegoViewModel
+		JuegoVM: ClsVMBase
 
+			// Atributos que solo hara falta en la clase
+			private ObservableCollection<ClsPartida> partidas
+			private IDispatcherTimer timerGlobal
+			private IDispatcherTimer mensajeTimer
+			private int indicePartidaActual
+			private List<ClsPokemon> listadoPokemons
+
+			// Atributos que tendrán una propiedades para que la vista pueda usarlos
+			private ClsPartida partidaActual
+			private ClsPokemon pokemonSeleccionado
+			private Color colorMensaje
+			private DelegateCommand botonGuardarCommand
+			private DelegateCommand botonCancelarCommand
+			private int puntos
 			private int rondas
 			private int tiempo
-			private int puntos
-			private string nombreSeleccionado
-			private list<ClsPokemon> listaPokemon
+			private bool mostrarGuardar
+			private bool mostrarJuego
+			private bool mostrarMensaje
+			private string nombreJugador
+			private string mensajePuntos
 
+			public ClsPartida PartidaActual { get }
+			public ClsPokemon PokemonSeleccionado { get, set }
+			public Color ColorMensaje { get }
+			public DelegateCommand BotonGuardarCommand { get }
+			public DelegateCommand BotonCancelarCommand { get }
+			public int Puntos { get }
 			public int Rondas { get }
 			public int Tiempo { get }
-			public int Puntos { get }
-			public string NombreSeleccionado { get, set }
-			public list<ClsPokemon> ListaPokemon { get }
+			public bool MostrarGuardar { get }
+			public bool MostrarJuego { get }
+			public bool MostrarMensaje { get }
+			public string NombreJugador { get, set }
+			public string MensajePuntos { get }
 
-			public juegoViewModel() { ... }
+			public JuegoVM() { ... }
+			public JuegoVM(List<ClsPokemon> listadoPokemons) { ... }
 
-		clasificacionViewModel
+			private void iniciarJuego() { ... }
+			private void iniciarTemporizadorPregunta() { ... }
+			private async void timer_Tick(object sender, EventsArgs e) { ... }
+			private void crearPartidas() { ... }
+			private void siguientePartida() { ... }
+			private void comprobarRespuesta(ClsPokemon seleccion) { ... }
+			private void mensajeTimer_Tick(object sender, EventsArgs e) { ... }
+			private async void guardarPuntuacion() { ... }
+			private bool puedeGuardar() { ... }
+			private async void cancelar() { ... }
+
+		ListadoPuntuacionesVM: ClsVMBase
 
 			private list<ClsPuntuacion> listadoPuntuaciones
 
@@ -96,13 +142,54 @@ CAPA UI - MAUI (JUEGO)
 
 			public clasificacionViewModel() { ... }
 
+			public async Task actualizarListadoPuntuaciones() { ... }
+
+		SeleccionGeneracionVM: ClsVMBase
+
+			private List<string> generaciones
+			private string generacionSeleccionada
+			private DelegateCommand botonGeneracionCommand
+			private IDispatcherTimer contadorTimer
+			private int contadorPreparacion
+			private bool mostrarPreparacion
+			private bool mostrarCargando
+			private List<ClsPokemon> listadoPokemons
+
+			public List<string> generaciones { get }
+			public string generacionSeleccionada { get, set }
+			public DelegateCommand botonGeneracionCommand { get }
+			public int contadorPreparacion { get }
+			public bool mostrarPreparacion { get }
+			public bool mostrarCargando { get }
+
+			public SeleccionGeneracionVM() { ... }
+
+			private async void jugar() { ... }
+			private async void contadorTimer_Tick(object sender, EventArgs e) { ... }
+			private bool puedeJugar() { ... }
+			public async Task<List<ClsPokemon>> obtenerPokemons() { ... }
+
 	Views
 
 		MainPage.xaml
 
-		Juego.xaml
+		JuegoPage.xaml
 
-		Clasificacion.xaml
+			JuegoPage.xaml.cs
+
+				public JuegoPage(List<ClsPokemon> listadoPokemon) { ... }
+
+		ClasificacionPage.xaml
+
+			ClasificacionPage.xaml.cs
+
+				ListadoPuntuaciones vm
+
+				public ClasificacionPage() { ... }
+
+				protected override void OnAppearing() { ... }
+
+		GeneracionPage.xaml
 
 CAPA UI - ASP (API)
 

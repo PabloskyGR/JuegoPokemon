@@ -10,17 +10,22 @@
 
     <Grid>
         <!-- Imagen de fondo -->
-        <Image Source="fondo.png" 
-               Aspect="AspectFill" 
-               Opacity="0.3" 
+        <Image Source="fondo.png"
+               Aspect="AspectFill"
+               Opacity="0.3"
                InputTransparent="True" />
 
-        <!-- Contenido encima -->
-        <StackLayout Padding="20" VerticalOptions="CenterAndExpand" Spacing="15">
+        <!-- Contenido -->
+        <StackLayout Padding="20"
+                     VerticalOptions="CenterAndExpand"
+                     Spacing="20"
+                     HorizontalOptions="Center">
 
+            <!-- Título -->
             <Label Text="Elige tu Generación"
                    Style="{StaticResource ArcadeTitleStyle}" />
 
+            <!-- Picker de generación -->
             <Picker ItemsSource="{Binding Generaciones}"
                     SelectedItem="{Binding GeneracionSeleccionada, Mode=TwoWay}"
                     HorizontalOptions="Center"
@@ -29,18 +34,37 @@
                     BackgroundColor="#222"
                     FontFamily="{StaticResource GameFontFamily}" />
 
-            <!-- Contador visible solo durante la cuenta regresiva -->
-            <Label Text="{Binding ContadorPreparacion, StringFormat='¡Prepárate! (A veces tarda, paciencia) {0}...'}"
-                   IsVisible="{Binding MostrandoPreparacion}"
+            <!-- Indicador de carga -->
+            <StackLayout IsVisible="{Binding MostrarCargando}"
+                         Orientation="Vertical"
+                         HorizontalOptions="Center"
+                         Spacing="10">
+                <ActivityIndicator IsRunning="True"
+                                   Color="Orange"
+                                   WidthRequest="50"
+                                   HeightRequest="50" />
+                <Label Text="Cargando Pokémons..."
+                       TextColor="Orange"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+
+            <!-- Contador visible durante la preparación -->
+            <Label Text="{Binding ContadorPreparacion, StringFormat='¡Prepárate! {0}...'}"
+                   IsVisible="{Binding MostrarPreparacion}"
                    HorizontalOptions="Center"
                    FontSize="28"
                    FontAttributes="Bold"
                    TextColor="Orange"
                    Margin="0,10,0,10" />
 
+            <!-- Botón de jugar -->
             <Button Text="¡Jugar!"
                     Style="{StaticResource ArcadeButtonStyle}"
-                    Command="{Binding BotonGeneracionCommand}" />
+                    Command="{Binding BotonGeneracionCommand}"
+                    HorizontalOptions="Center"
+                    WidthRequest="200" />
         </StackLayout>
     </Grid>
 </ContentPage>

@@ -5,7 +5,7 @@ namespace CapaUI_Maui.Views;
 
 public partial class JuegoPage : ContentPage
 {
-    private readonly JuegoVM viewModel;
+    private JuegoVM viewModel;
 
     public JuegoPage(List<ClsPokemon> listadoPokemons)
     {
