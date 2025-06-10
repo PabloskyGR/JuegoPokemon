@@ -30,6 +30,10 @@ namespace CapaUI_Maui.ViewModels
         #endregion
 
         #region metodos
+        /// <summary>
+        /// Método que usaremos en el codigo behind de la vista, que lo llamaremos en un método OnAppaering para cada vez que se muestre la vista se actualizara el listado
+        /// </summary>
+        /// <returns>Devolvera el listado actualizado</returns>
         public async Task actualizarListadoPuntuaciones()
         {
             List<ClsPuntuacion> listado = await ServicePuntuacion.getPuntucaciones();

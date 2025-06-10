@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-06-09T08:48:29.121</Modified>
+      <Modified>2025-06-10T22:50:24.940</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-06-06T22:59:05.895</Modified>
+      <Modified>2025-06-10T21:00:41.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.runtimeconfig.json">
       <PackagePath>CapaUI-Maui.runtimeconfig.json</PackagePath>
-      <Modified>2025-06-06T22:59:05.570</Modified>
+      <Modified>2025-06-10T21:00:41.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.dll">
       <PackagePath>CapaUI-Maui.dll</PackagePath>
-      <Modified>2025-06-09T08:48:27.429</Modified>
+      <Modified>2025-06-10T22:50:23.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CapaUI-Maui.exe</PackagePath>
-      <Modified>2025-06-09T08:48:27.481</Modified>
+      <Modified>2025-06-10T22:50:23.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -319,7 +319,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CapaUI-Maui.deps.json">
       <PackagePath>CapaUI-Maui.deps.json</PackagePath>
-      <Modified>2025-06-06T22:59:05.391</Modified>
+      <Modified>2025-06-10T21:00:41.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -763,23 +763,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaBL\bin\Debug\net8.0\CapaBL.dll">
       <PackagePath>CapaBL.dll</PackagePath>
-      <Modified>2025-06-09T08:21:30.300</Modified>
+      <Modified>2025-06-10T21:42:12.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaDAL\bin\Debug\net8.0\CapaDAL.dll">
       <PackagePath>CapaDAL.dll</PackagePath>
-      <Modified>2025-06-09T08:21:29.959</Modified>
+      <Modified>2025-06-10T21:42:12.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.dll">
       <PackagePath>CapaENT.dll</PackagePath>
-      <Modified>2025-06-09T08:21:29.342</Modified>
+      <Modified>2025-06-10T21:42:11.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\DTO\bin\Debug\net8.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>
-      <Modified>2025-06-09T08:21:29.342</Modified>
+      <Modified>2025-06-10T21:42:11.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\Desktop\JuegoPokemon\Services\bin\Debug\net8.0\Services.dll">
       <PackagePath>Services.dll</PackagePath>
-      <Modified>2025-06-09T08:48:17.473</Modified>
+      <Modified>2025-06-10T21:42:12.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

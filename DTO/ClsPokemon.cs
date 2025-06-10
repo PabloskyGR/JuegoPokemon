@@ -7,7 +7,7 @@ namespace DTO
     {
         #region atributos
         private string nombre;
-        private string urlImagen; // URL del sprite del Pokémon (ej. sprites.front_default)
+        private string urlImagen; 
         #endregion
 
         #region propiedades

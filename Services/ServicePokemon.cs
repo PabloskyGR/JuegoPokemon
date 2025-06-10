@@ -13,53 +13,63 @@ namespace Services
         private static string baseUrl = "https://pokeapi.co/api/v2/pokemon";
 
         /// <summary>
-        /// 
+        /// Servicio para obtener un listado de pokemons de la api publica
         /// </summary>
-        /// <param name="offset"></param>
-        /// <param name="limit"></param>
-        /// <returns></returns>
+        /// <param name="offset">Parametro de entrada que sirve para saber por donde empezar a coger pokemons, asi seleccionamos la generacion</param>
+        /// <param name="limit">Parametro de entrada que que sirve el limite de que pokemons hay que coger, asi seleccionamos la generacion los limites</param>
+        /// <returns>Devuelve el listado de pokemons dpendiendo de la generacion que elija el usuario</returns>
         /// <exception cref="Exception"></exception>
-
         public static async Task<List<ClsPokemon>> getPokemon(int offset, int limit)
         {
+            string miCadenaUrl = $"{baseUrl}?offset={offset}&limit={limit}";
+
             List<ClsPokemon> listadoPokemon = new List<ClsPokemon>();
-            HttpClient httpClient = new HttpClient();
+            HttpClient miHttpClient = new HttpClient();
+            HttpResponseMessage miCodigoRespuesta;
+            string textoJsonRespuesta;
 
             try
             {
-                string url = $"{baseUrl}?offset={offset}&limit={limit}";
+                miCodigoRespuesta = await miHttpClient.GetAsync(miCadenaUrl);
 
-                HttpResponseMessage response = await httpClient.GetAsync(url);
-
-                if (response.IsSuccessStatusCode)
+                if (miCodigoRespuesta.IsSuccessStatusCode)
                 {
-                    string json = await response.Content.ReadAsStringAsync();
-                    var responseObject = JsonConvert.DeserializeObject<dynamic>(json);
+                    textoJsonRespuesta = await miCodigoRespuesta.Content.ReadAsStringAsync();
+                    var objetoRespuesta = JsonConvert.DeserializeObject<dynamic>(textoJsonRespuesta);
 
-                    foreach (var result in responseObject.results)
+                    foreach (var resultado in objetoRespuesta.results)
                     {
-                        string pokemonUrl = result.url;
-                        var pokemonResponse = await httpClient.GetAsync(pokemonUrl);
+                        string urlPokemon = resultado.url;
+                        HttpResponseMessage respuestaPokemon = await miHttpClient.GetAsync(urlPokemon);
 
-                        if (pokemonResponse.IsSuccessStatusCode)
+                        if (respuestaPokemon.IsSuccessStatusCode)
                         {
-                            string pokemonJson = await pokemonResponse.Content.ReadAsStringAsync();
-                            var pokemonData = JsonConvert.DeserializeObject<dynamic>(pokemonJson);
-                            string nombre = pokemonData.name.ToString().ToUpper()[0] + pokemonData.name.ToString().Substring(1); // Capitalizar primera letra
-                            string urlImagen = pokemonData.sprites.front_default;
+                            string jsonPokemon = await respuestaPokemon.Content.ReadAsStringAsync();
+                            var datosPokemon = JsonConvert.DeserializeObject<dynamic>(jsonPokemon);
+
+                            string nombre = datosPokemon.name.ToString().ToUpper()[0] + datosPokemon.name.ToString().Substring(1);
+                            string urlImagen = datosPokemon.sprites.front_default;
+
                             listadoPokemon.Add(new ClsPokemon(nombre, urlImagen));
                         }
                     }
                 }
+                else
+                {
+                    listadoPokemon = null;
+                }
+
+                miHttpClient.Dispose();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception("Error al obtener los datos de la API", ex);
+                throw new Exception("No se pudo obtener el listado de Pokémon");
             }
 
             return listadoPokemon;
         }
 
-       
+
+
     }
 }

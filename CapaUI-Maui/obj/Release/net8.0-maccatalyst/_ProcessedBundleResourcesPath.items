@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\MauiInfo.plist" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\clasificacion.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\fondo.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\fondo_clasi.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\fondo_juego.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\generaciones.png" />
+    <BundleResource Include="C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\reglas.png" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\PressStart2P-Regular.ttf" />
   </ItemGroup>
 </Project>

@@ -14,9 +14,11 @@ namespace CapaDAL
         private static ClsConexion conexion = new ClsConexion();
 
         /// <summary>
-        /// 
+        /// Método estatico que devuelve un listado de puntuaciones de la base de datos de azure
+        /// Pre: La conexion a la base de datos debe estar abierta
+        /// Post: Ninguna
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Develve el listado de puntuaciones que haya en la base de datos</returns>
         public static List<ClsPuntuacion> listadoPuntuacionesDAL()
         {
             List<ClsPuntuacion> listadoPuntuaciones = new List<ClsPuntuacion>();
@@ -80,10 +82,12 @@ namespace CapaDAL
         }
 
         /// <summary>
-        /// 
+        /// Metodo estatico que inserta una puntuacion en la base de datos de azure
+        /// Pre: La conexion a la base de datos debe estar abierta
+        /// Post: Ninguna
         /// </summary>
         /// <param name="puntuacion"></param>
-        /// <returns></returns>
+        /// <returns>Devuelve el numero de filas afectadas, 1 si se ha insertado y 0 si no se ha insertado nada</returns>
         public static int insertarPuntuacionDAL(ClsPuntuacion puntuacion)
         {
             int numeroFilasAfectadas = 0;

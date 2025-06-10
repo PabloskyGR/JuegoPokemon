@@ -13,15 +13,12 @@ namespace Services
 {
     public class ServicePuntuacion
     {
-        /// <summary>
-        /// 
-        /// </summary>
         private static string baseUrl = "http://localhost:5111/api/puntuaciones";
 
         /// <summary>
-        /// 
+        /// Servicio para obtener un listado de puntuaciones de la api creada de la base de datos de azure
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Devolvemos el listado de puntuaciones de la base de datos</returns>
         /// <exception cref="Exception"></exception>
         public static async Task<List<ClsPuntuacion>> getPuntucaciones()
         {
@@ -59,10 +56,10 @@ namespace Services
         }
 
         /// <summary>
-        /// 
+        /// Servicio que envia una puntuacion a la api, para que se agregue a la base de datos de azure
         /// </summary>
         /// <param name="puntuacion"></param>
-        /// <returns></returns>
+        /// <returns>Devuelve el codido de estado dependiendo de lo que haya sucedido en la insercion</returns>
         /// <exception cref="Exception"></exception>
         public static async Task<HttpStatusCode> postPuntuacion(ClsPuntuacion puntuacion)
         {
