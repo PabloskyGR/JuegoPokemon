@@ -11,3 +11,16 @@ C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\refint\CapaENT.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\ref\CapaENT.dll
 C:\Users\pablo\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.sourcelink.json
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.deps.json
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\bin\Debug\net8.0\CapaENT.pdb
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.csproj.AssemblyReference.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.AssemblyInfoInputs.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.AssemblyInfo.cs
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.csproj.CoreCompileInputs.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.sourcelink.json
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\refint\CapaENT.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\CapaENT.pdb
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaENT\obj\Debug\net8.0\ref\CapaENT.dll

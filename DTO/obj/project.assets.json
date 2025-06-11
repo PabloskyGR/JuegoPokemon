@@ -1710,23 +1710,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pablo\\.nuget\\packages\\": {},
+    "C:\\Users\\jpgonzalez\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\DTO\\DTO.csproj",
+      "projectUniqueName": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\DTO\\DTO.csproj",
       "projectName": "DTO",
-      "projectPath": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\DTO\\DTO.csproj",
-      "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\DTO\\obj\\",
+      "projectPath": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\DTO\\DTO.csproj",
+      "packagesPath": "C:\\Users\\jpgonzalez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jpgonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1785,7 +1785,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

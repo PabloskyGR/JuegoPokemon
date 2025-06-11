@@ -102,7 +102,7 @@ namespace CapaUI_Maui.ViewModels
 
         public ClsPokemon PokemonSeleccionado
         {
-            get { return pokemonSeleccionado; }
+            get { return partidaActual.PokemonSeleccionado; }
             set
             {
                 if (partidaActual != null && value != null)
@@ -287,10 +287,10 @@ namespace CapaUI_Maui.ViewModels
                 // En caso de que el pokemon seleccionado sea el pokemon incorrecto
                 else
                 {
-                    // Restamos un punto por fallar
-                    puntos -= 1;
+                    // Restamos dos puntos por fallar
+                    puntos -= 2;
                     // Al atributo del mensaje de los puntos, le pasamos el mensaje de que ha fallado y que tiene un punto menos
-                    mensajePuntos = "¡Incorrecto! (-1 punto)";
+                    mensajePuntos = "¡Incorrecto! (-2 puntos)";
                     // Para cuando se responda incorrectamente al mensaje le pondremos el color rojo para que visualmente se vea que se ha respondido incorrectamente
                     colorMensaje = Colors.Red;
                 }

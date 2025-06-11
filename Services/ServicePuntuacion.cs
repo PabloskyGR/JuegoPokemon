@@ -13,7 +13,7 @@ namespace Services
 {
     public class ServicePuntuacion
     {
-        private static string baseUrl = "http://localhost:5111/api/puntuaciones";
+        private static string baseUrl = "https://apipuntuaciones-e9a9hzbwcyctb8dd.spaincentral-01.azurewebsites.net/api/puntuaciones";
 
         /// <summary>
         /// Servicio para obtener un listado de puntuaciones de la api creada de la base de datos de azure

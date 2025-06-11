@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CapaENT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a4c44232f3ad429712dffeddb33804fc0aa385c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9007907903943a2adeb6af9dc9cd446712ed8f91")]
 [assembly: System.Reflection.AssemblyProductAttribute("CapaENT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CapaENT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

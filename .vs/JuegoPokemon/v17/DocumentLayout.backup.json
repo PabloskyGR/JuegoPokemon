@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pablo\\Desktop\\JuegoPokemon\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\jpgonzalez\\desktop\\juegopokemon\\capaui-maui\\viewmodels\\juegovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\viewmodels\\juegovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|c:\\users\\jpgonzalez\\desktop\\juegopokemon\\services\\servicepuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|solutionrelative:services\\servicepuntuacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|c:\\users\\jpgonzalez\\desktop\\juegopokemon\\services\\servicepokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FF54108-3170-451B-A3AC-C74AC59247B5}|Services\\Services.csproj|solutionrelative:services\\servicepokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|c:\\users\\jpgonzalez\\desktop\\juegopokemon\\capaui-maui\\views\\juegopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9B7885F-7867-4A73-ADC4-188DDC98AF41}|CapaUI-Maui\\CapaUI-Maui.csproj|solutionrelative:capaui-maui\\views\\juegopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -25,14 +54,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
@@ -42,6 +63,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServicePokemon.cs",
+              "DocumentMoniker": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\Services\\ServicePokemon.cs",
+              "RelativeDocumentMoniker": "Services\\ServicePokemon.cs",
+              "ToolTip": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\Services\\ServicePokemon.cs",
+              "RelativeToolTip": "Services\\ServicePokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:13:08.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicePuntuacion.cs",
+              "DocumentMoniker": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\Services\\ServicePuntuacion.cs",
+              "RelativeDocumentMoniker": "Services\\ServicePuntuacion.cs",
+              "ToolTip": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\Services\\ServicePuntuacion.cs",
+              "RelativeToolTip": "Services\\ServicePuntuacion.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwB8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:13:06.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JuegoVM.cs",
+              "DocumentMoniker": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\JuegoVM.cs",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\ViewModels\\JuegoVM.cs",
+              "ToolTip": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\CapaUI-Maui\\ViewModels\\JuegoVM.cs",
+              "RelativeToolTip": "CapaUI-Maui\\ViewModels\\JuegoVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T10:58:10.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JuegoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\CapaUI-Maui\\Views\\JuegoPage.xaml",
+              "RelativeDocumentMoniker": "CapaUI-Maui\\Views\\JuegoPage.xaml",
+              "ToolTip": "C:\\Users\\jpgonzalez\\Desktop\\JuegoPokemon\\CapaUI-Maui\\Views\\JuegoPage.xaml",
+              "RelativeToolTip": "CapaUI-Maui\\Views\\JuegoPage.xaml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-11T10:55:06.29Z",
+              "EditorCaption": ""
             }
           ]
         }

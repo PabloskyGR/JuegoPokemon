@@ -1,1 +1,1 @@
-C:\Users\pablo\Desktop\JuegoPokemon\CapaUI-Maui\CapaUI-Maui.csproj;x64
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\CapaUI-Maui\CapaUI-Maui.csproj;x64

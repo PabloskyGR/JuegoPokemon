@@ -11,3 +11,16 @@ C:\Users\pablo\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.dll
 C:\Users\pablo\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\refint\DTO.dll
 C:\Users\pablo\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.pdb
 C:\Users\pablo\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\ref\DTO.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\bin\Release\net8.0\DTO.deps.json
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\bin\Release\net8.0\DTO.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\bin\Release\net8.0\DTO.pdb
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.csproj.AssemblyReference.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.AssemblyInfo.cs
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.sourcelink.json
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\refint\DTO.dll
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\DTO.pdb
+C:\Users\jpgonzalez\Desktop\JuegoPokemon\DTO\obj\Release\net8.0\ref\DTO.dll
